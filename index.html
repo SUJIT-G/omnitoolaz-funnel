@@ -88,10 +88,84 @@ body {
   font-weight:bold;
   text-decoration:none;
 }
+  .promo-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  background: #fff5e6;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #ffb36b;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 30px 0;
+}
+
+.promo-img {
+  width: 260px;
+  border-radius: 15px;
+}
+
+.promo-content h2 {
+  font-size: 26px;
+  color: #e65100;
+  margin-bottom: 10px;
+}
+
+.promo-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.promo-benefits {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.promo-benefits li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.promo-btn {
+  display: inline-block;
+  background: #ff6d00;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.promo-btn:hover {
+  background: #e65c00;
+}
+
 </style>
 </head>
 
 <body>
+<section class="promo-box">
+  <img src="https://m.media-amazon.com/images/I/51C7Z9yF2NL._SL1000_.jpg" alt="Java Burn Supplement" class="promo-img">
+
+  <div class="promo-content">
+    <h2>🔥 Boost Your Metabolism With Java Burn</h2>
+    <p>Java Burn is a natural metabolism booster that mixes instantly with your morning coffee to help burn fat faster, increase energy, and support overall health.</p>
+
+    <ul class="promo-benefits">
+      <li>✔️ Boosts metabolism naturally</li>
+      <li>✔️ Helps burn stubborn belly fat</li>
+      <li>✔️ Enhances morning energy & focus</li>
+      <li>✔️ Made from natural ingredients</li>
+    </ul>
+
+    <a href="https://a7bb4cpb1rqratc9qmh8yf2k7b.hop.clickbank.net" target="_blank" target="_blank" class="promo-btn">
+      🔥 Get Java Burn – Limited Time Discount
+    </a>
+  </div>
+</section>
 
 <div class="header">🔥 Morning Coffee + Tea Ritual Melts Fat 3× Faster (Backed by Science)</div>
 
@@ -156,5 +230,24 @@ body {
 <a class="sticky-btn" href="https://a7bb4cpb1rqratc9qmh8yf2k7b.hop.clickbank.net" target="_blank">🔥 Click to Watch the Morning Ritual Video</a>
 
 </body>
+  <script>document.addEventListener("DOMContentLoaded", function() {
+  const btn = document.querySelector(".promo-btn");
+
+  if (btn) {
+    btn.addEventListener("click", function() {
+      console.log("Java Burn CTA clicked");
+
+      // GA4 event tracking (optional)
+      if (typeof gtag !== "undefined") {
+        gtag('event', 'java_burn_click', {
+          event_category: 'Affiliate',
+          event_label: 'Java Burn CTA Click'
+        });
+      }
+    });
+  }
+});
+</script>
 </html>
+
 
